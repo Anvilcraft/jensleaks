@@ -15,11 +15,15 @@ if(isset($_POST['addleak'])){
     $bestMeme = $_POST['bestMeme'];
 
     $sql = "INSERT INTO `leaks` (`name`, `realname`, `phoneNumber`, `email`, `wohnort`, `adresse`, `bestMeme`, `kontonummer`, `face`) VALUES ('$name', '$realname', '$phonenumber', '$email', '$wohnort', '$adresse', '$bestMeme', '1234', '$pic')";
-
-    if(!mysqli_query($con, $sql)){
+	if(strpos($sql,"script")){
+		echo "Keine SQL Injection, LordMZTE";
+	} else{
+		    if(!mysqli_query($con, $sql)){
         echo "ERROR_INSERTING_SQL: ".mysqli_error($con);
     }else{
         echo "Leak erfolgreich hinzugefügt!";
         header('Location: index.php');
     }
+	}
+
 }
