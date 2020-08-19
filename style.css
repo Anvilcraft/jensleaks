@@ -1,0 +1,68 @@
+body{
+    background-color: #3c3c3c;
+    font-family: 'Cantarell', sans-serif;
+    letter-spacing: normal;
+    color: white;
+    margin: 40px;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a{
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+}
+.bestMeme{
+    font-weight: normal;
+}
+a:visited{
+    color: white;
+}
+td{
+    padding-left: 10px;
+}
+.faceleak{
+    max-height: 130px;
+}
+.person{
+    margin-left: 40px;
+    margin-right: 140px;
+}
+.person table{
+    border: solid 1px white;
+}
+.input-add{
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    padding: 15px;
+}
+.input-add::placeholder{
+   color: lightgrey;
+}
+.input-add:focus{
+    border: solid 1px lightblue;
+}
+.submit-add, .btn-add{
+    background-color: #454545;
+    border: solid 1px white;
+    padding: 10px;
+    horiz-align: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+.pen{
+    max-width: 30px;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.discord{
+    max-width: 40px;
+}
